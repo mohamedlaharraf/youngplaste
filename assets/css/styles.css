@@ -147,7 +147,7 @@ the website, in dark theme
   background-color: var(--first-color-dark);
 }
 
-.dark-theme .product__circle,
+.dark-theme .member__circle,
 .dark-theme .footer__subscribe{
   background-color: var(--container-color);
 }
@@ -219,6 +219,7 @@ the website, in dark theme
   align-items: center;
   column-gap: .5rem;
   transition: .3s;
+  /* width: 20%; */
 }
 
 .nav__logo-icon{
@@ -490,23 +491,23 @@ the website, in dark theme
   transform: translateY(-.25rem);
 }
 
-/*=============== PRODUCTS ===============*/
-.product__description{
+/*=============== memberS ===============*/
+.member__description{
   text-align: center;
 }
 
-.product__container{
+.member__container{
   padding: 3rem 0;
   grid-template-columns: repeat(2, 1fr);
   gap: 2.5rem 3rem;
 }
 
-.product__card{
+.member__card{
   display: grid;
   position: relative;
 }
 
-.product__img{
+.member__img{
   position: relative;
   width: 120px;
   justify-self: center;
@@ -514,18 +515,18 @@ the website, in dark theme
   transition: .3s;
 }
 
-.product__title,
-.product__price{
+.member__title,
+.member__price{
   font-size: var(--small-font-size);
   font-weight: var(--font-semi-bold);
   color: var(--title-color);
 }
 
-.product__title{
+.member__title{
   margin-bottom: .25rem;
 }
 
-.product__button{
+.member__button{
   position: absolute;
   right: 0;
   bottom: 0;
@@ -536,11 +537,11 @@ the website, in dark theme
   font-size: 1.15rem;
 }
 
-.product__button:hover{
+.member__button:hover{
   background-color: var(--first-color-alt);
 }
 
-.product__circle{
+.member__circle{
   width: 90px;
   height: 90px;
   background-color: var(--first-color-lighten);
@@ -550,7 +551,7 @@ the website, in dark theme
   left: 5%;
 }
 
-.product__card:hover .product__img{
+.member__card:hover .member__img{
   transform: translateY(-.5rem);
 }
 
@@ -875,7 +876,7 @@ the website, in dark theme
     padding: 1.5rem;
   }
 
-  .product__container{
+  .member__container{
     grid-template-columns: .6fr;
     justify-content: center;
   }
@@ -887,10 +888,10 @@ the website, in dark theme
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .product__description{
+  .member__description{
     padding: 0 4rem;
   }
-  .product__container{
+  .member__container{
     grid-template-columns: repeat(2, 170px);
     justify-content: center;
     column-gap: 5rem;
@@ -995,23 +996,23 @@ the website, in dark theme
     font-size: var(--normal-font-size);
   }
 
-  .product__description{
-    padding: 0 16rem;
+  .member__description{
+    padding: 0 10rem;
   }
-  .product__container{
+  .member__container{
     padding: 4rem 0;
     grid-template-columns: repeat(3, 185px);
     gap: 4rem 6rem;
   }
-  .product__img{
+  .member__img{
     width: 160px;
   }
-  .product__circle{
+  .member__circle{
     width: 110px;
     height: 110px;
   }
-  .product__title,
-  .product__price{
+  .member__title,
+  .member__price{
     font-size: var(--normal-font-size);
   }
 
