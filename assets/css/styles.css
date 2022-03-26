@@ -1006,6 +1006,7 @@ the website, in dark theme
   }
   .member__img{
     width: 160px;
+    border-radius: 100%;
   }
   .member__circle{
     width: 110px;
