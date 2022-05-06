@@ -10,16 +10,37 @@
       href="assets/img/fav-icon.png"
       type="image/x-icon"
     />
-
     <!--=============== REMIX ICONS ===============-->
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
-<!-- ttt -->
+    <!-- ttt -->
     <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/cardSlider.css" />
     <link rel="stylesheet" href="assets/css/styles.css" />
 
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v1.3.3/dist/jBox.all.min.css"
+      rel="stylesheet"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("gMqTGLOkvlujF2E8q");
+      })();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v1.3.3/dist/jBox.all.min.js"></script>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <title>YOUNG PLASTE</title>
   </head>
 
@@ -47,6 +68,9 @@
             </li>
             <li class="nav__item">
               <a href="#faqs" class="nav__link">FAQs</a>
+            </li>
+            <li class="nav__item">
+              <a href="#testimonial" class="nav__link">Temoignages</a>
             </li>
             <li class="nav__item">
               <a href="#contact" class="nav__link">Contactez-nous</a>
@@ -77,7 +101,8 @@
 
           <div class="home__data">
             <h1 class="home__title">
-              Together to defend our big house
+              We all to defend <br />
+              our planet
             </h1>
 
             <p class="home__description">
@@ -115,7 +140,7 @@
       <!--==================== ABOUT ====================-->
       <section class="about section container" id="about">
         <div class="about__container grid">
-          <img src="assets/img/about.png" alt="" class="about__img" />
+          <img src="assets/img/slide1.png" alt="" class="about__img" />
 
           <div class="about__data">
             <h2 class="section__title about__title">
@@ -126,6 +151,10 @@
               Pave écologique « YP » pour le revêtement du sol qui répond aux
               normes exigées en matière d’inflammabilité et de résistance.
             </p>
+            <!-- <p class="about__description">
+              Pave écologique « YP » pour le revêtement du sol qui répond aux
+              normes exigées en matière d’inflammabilité et de résistance.
+            </p> -->
 
             <div class="about__details">
               <p class="about__details-description">
@@ -193,7 +222,7 @@
       </section>
 
       <!--==================== Members ====================-->
-      <section class="member section container" id="Members">
+      <!-- <section class="member section container" id="Members">
         <h2 class="section__title-center">Membres</h2>
 
         <p class="member__description">
@@ -310,7 +339,6 @@
 
             <img src="assets/img/anass.png" alt="" class="member__img" />
 
-
             <h3 class="member__title">Mohamed-anas EL HAMDANI</h3>
             <span class="member__price"><br /></span>
 
@@ -323,8 +351,142 @@
             </a>
           </article>
         </div>
-      </section>
+      </section> -->
+      <!--  menmber slider  -->
+      <section class="member section container" id="Members">
+        <h2 class="section__title-center">Membres</h2>
 
+        <p class="member__description">
+          YOUNG PLASTE possédera une équipe cohérente, connue par la discipline
+          de ses membres et leur esprit d’équipe accumulé au cours de leur
+          cursus scolaire, universitaire et notamment professionnelle.
+        </p>
+
+        <!-- Slider main container -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper content">
+            <div class="swiper-slide member__card">
+              <div class="member__circle__card"></div>
+
+              <img src="assets/img/youness.png" alt="" class="member__img" />
+
+              <h3 class="member__title">Youness RAFYA</h3>
+              <span class="member__price"><br /></span>
+
+              <a href="https://www.linkedin.com/in/youness-rafya-a4ab031bb">
+                <button class="button--flex member__button">
+                  <i class="ri-linkedin-fill"> </i>
+                </button>
+              </a>
+            </div>
+            <div class="swiper-slide member__card">
+              <div class="member__circle__card"></div>
+
+              <img src="assets/img/hajar.png" alt="" class="member__img" />
+
+              <h3 class="member__title">Hajar SIKAL</h3>
+              <span class="member__price"><br /></span>
+
+              <a href="https://www.linkedin.com/in/hajar-sikal-0309841a4">
+                <button class="button--flex member__button">
+                  <i class="ri-linkedin-fill"> </i>
+                </button>
+              </a>
+            </div>
+            <div class="swiper-slide member__card">
+              <div class="member__circle__card"></div>
+
+              <img src="assets/img/azzeddine.png" alt="" class="member__img" />
+
+              <h3 class="member__title">Azzeddine CALLAF</h3>
+              <span class="member__price"><br /></span>
+
+              <a href="https://www.linkedin.com/in/azzeddine-callaf">
+                <button class="button--flex member__button">
+                  <i class="ri-linkedin-fill"> </i>
+                </button>
+              </a>
+            </div>
+            <div class="swiper-slide member__card">
+              <div class="member__circle__card"></div>
+
+              <img src="assets/img/mohamed.png" alt="" class="member__img" />
+
+              <h3 class="member__title">Mohamed LAHARRAF</h3>
+              <span class="member__price"><br /></span>
+
+              <a href="https://www.linkedin.com/in/laharraf-mohamed/">
+                <button class="button--flex member__button">
+                  <i class="ri-linkedin-fill"> </i>
+                </button>
+              </a>
+            </div>
+            <div class="swiper-slide member__card">
+              <div class="member__circle__card"></div>
+
+              <img src="assets/img/fadwa.png" alt="" class="member__img" />
+
+              <h3 class="member__title">Fadwa GUISSER</h3>
+              <span class="member__price"><br /></span>
+
+              <a href="https://www.linkedin.com/in/fadwa-guisser-27aa2a215">
+                <button class="button--flex member__button">
+                  <i class="ri-linkedin-fill"> </i>
+                </button>
+              </a>
+            </div>
+            <div class="swiper-slide member__card">
+              <div class="member__circle__card"></div>
+
+              <img src="assets/img/salah.png" alt="" class="member__img" />
+
+              <h3 class="member__title">Salah eddine BOUTAYEB</h3>
+              <span class="member__price"><br /></span>
+
+              <a
+                href="https://www.linkedin.com/in/salah-eddine-boutayeb-3b8841176"
+              >
+                <button class="button--flex member__button">
+                  <i class="ri-linkedin-fill"> </i>
+                </button>
+              </a>
+            </div>
+            <div class="swiper-slide member__card">
+              <div class="member__circle__card"></div>
+
+              <img src="assets/img/hajar1.png" alt="" class="member__img" />
+
+              <h3 class="member__title">Hajar BAKHCHENI</h3>
+              <span class="member__price"><br /></span>
+
+              <a href="https://www.linkedin.com/in/hajar-bakhcheni-60aa231a3">
+                <button class="button--flex member__button">
+                  <i class="ri-linkedin-fill"> </i>
+                </button>
+              </a>
+            </div>
+            <div class="swiper-slide member__card">
+              <div class="member__circle__card"></div>
+
+              <img src="assets/img/anass.png" alt="" class="member__img" />
+
+              <h3 class="member__title">Med-Anas EL HAMDANI</h3>
+              <span class="member__price"><br /></span>
+
+              <a
+                href="https://www.linkedin.com/in/mohamed-anas-el-hamdani-1a00691b8"
+              >
+                <button class="button--flex member__button">
+                  <i class="ri-linkedin-fill"> </i>
+                </button>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
       <!--==================== QUESTIONS ====================-->
       <section class="questions section" id="faqs">
         <h2 class="section__title-center questions__title container">
@@ -333,7 +495,7 @@
 
         <div class="questions__container container grid">
           <div class="questions__group">
-            <div class="questions__item">
+            <div class="questions__item accordion-open">
               <header class="questions__header">
                 <i class="ri-add-line questions__icon"></i>
                 <h3 class="questions__item-title">
@@ -341,7 +503,7 @@
                 </h3>
               </header>
 
-              <div class="questions__content">
+              <div class="questions__content" style="height: 92px">
                 <p class="questions__description">
                   Youngplaste est une start-up qui a pour activité le traitement
                   & Recyclage des dechets en plastique.
@@ -371,7 +533,7 @@
               <header class="questions__header">
                 <i class="ri-add-line questions__icon"></i>
                 <h3 class="questions__item-title">
-                  Pourquoi le recyclage est deterimanrt pour l’environnement ?
+                  Pourquoi le recyclage est deterimant pour l’environnement ?
                 </h3>
               </header>
 
@@ -412,6 +574,71 @@
           </div>
         </div>
       </section>
+      <section class="member section container" id="testimonial">
+        <h2 class="section__title-center">Testimonials</h2>
+
+        <p class="member__description"></p>
+
+        <!-- Slider main container -->
+        <div class="content">
+          <div class="steps__container grid">
+            <div class="">
+              <figure class="snip1192">
+                <blockquote>
+                  Jeunesse ne saurait durer, mais Young Plast pourrait durer ...
+                  Une innovation puisante dans les énergies renouvelables et un
+                  rajeunissement de notre mode de vie vieilli et altéré par une
+                  pollution galopante.
+                </blockquote>
+                <div class="author">
+                  <img src="./assets/img/Slide11.PNG" alt="sq-sample1" />
+                  <h5>
+                    Mr Hamid El omari
+                    <span>
+                      Directeur de la plate-forme technologique à la cité
+                      d'innovation UHP</span
+                    >
+                  </h5>
+                </div>
+              </figure>
+            </div>
+            <div class="">
+              <figure class="snip1192 hover">
+                <blockquote>
+                  Il n y a rien de plus durable que d'avoir un produit utile,
+                  agréable respectueux de l'environnement.
+                </blockquote>
+                <div class="author">
+                  <img src="./assets/img/Slide22.PNG" alt="sq-sample24" />
+                  <h5>
+                    Youssef boukdir<span>
+                      Program Manager - U-Founders, UM6P</span
+                    >
+                  </h5>
+                </div>
+              </figure>
+            </div>
+            <div class="">
+              <figure class="snip1192">
+                <blockquote>
+                  Le changement climatique est une problématique réelle à
+                  laquelle seront confrontées les générations présentes et
+                  futures si le rythme de pollution actuel est maintenu. Young
+                  Plaste essaye de résoudre cette problématique en recyclant les
+                  déchets plastiques, responsables en grande partie de la
+                  pollution de la notre planète.
+                </blockquote>
+                <div class="author">
+                  <img src="./assets/img/Slide33.PNG" alt="sq-sample29" />
+                  <h5>
+                    Armand TAMAFOUO<span> Doctorant et entrepreneurs</span>
+                  </h5>
+                </div>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!--==================== CONTACT ====================-->
       <section class="contact section container" id="contact">
@@ -438,30 +665,46 @@
               </div>
             </div>
           </div>
+          <!-- emailjs -->
 
-          <form action="" class="contact__form">
+          <!-- end -->
+          <form class="contact__form" method="post">
             <div class="contact__inputs">
               <div class="contact__content">
-                <input type="email" placeholder=" " class="contact__input" />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder=" "
+                  class="contact__input email"
+                />
                 <label for="" class="contact__label">Email</label>
               </div>
 
               <div class="contact__content">
-                <input type="text" placeholder=" " class="contact__input" />
-                <label for="" class="contact__label">Subject</label>
+                <input
+                  type="name"
+                  name="name"
+                  placeholder=" "
+                  class="contact__input name"
+                />
+                <label for="" class="contact__label">Nom</label>
               </div>
 
               <div class="contact__content contact__area">
                 <textarea
                   name="message"
                   placeholder=" "
-                  class="contact__input"
+                  class="message contact__input"
                 ></textarea>
                 <label for="" class="contact__label">Message</label>
               </div>
             </div>
 
-            <button class="button button--flex">
+            <button
+              class="submit button button--flex"
+              name="submit"
+              type="submit"
+            >
               Send Message
               <i class="ri-arrow-right-up-line button__icon"></i>
             </button>
@@ -472,6 +715,49 @@
 
     <!--==================== FOOTER ====================-->
     <footer class="footer section">
+      <div class="footer__container container grid">
+        <div class="footer__content">
+          <a href="#" class="footer__logo"> Young PLASTE </a>
+
+          <h3 class="footer__title">We all to defend our planet</h3>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Notre adresse</h3>
+
+          <ul class="footer__data">
+            <li class="footer__information">26000 Settat Morocco</li>
+          </ul>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Contactez-nous</h3>
+
+          <ul class="footer__data">
+            <li class="footer__information">
+              + 212 641 573 549 <br />
+              + 212 618 606 790
+            </li>
+
+            <div class="footer__social">
+              <a
+                href="https://www.linkedin.com/company/young-plaste"
+                target="_blank"
+                class="footer__social-link"
+              >
+                <i class="ri-linkedin-fill"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/youngplaste"
+                target="_blank"
+                class="footer__social-link"
+              >
+                <i class="ri-instagram-line"></i>
+              </a>
+            </div>
+          </ul>
+        </div>
+      </div>
       <p class="footer__copy">&#169; youngplaste. All rigths reserved</p>
       <div class="footer__container container grid"></div>
     </footer>
@@ -486,19 +772,7 @@
 
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
-    
-      
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5VL9P69VWW"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-5VL9P69VWW');
-    </script>
-    
+    <script src="assets/js/cradSlider.js"></script>
+    <!-- Compiled and minified JavaScript -->
   </body>
-
-  
 </html>
