@@ -1,3 +1,5 @@
+const { NEWDECIMAL } = require("mysql/lib/protocol/constants/types");
+
 /*=============== SHOW MENU ===============*/
 const navMenu = document.getElementById("nav-menu"),
   navToggle = document.getElementById("nav-toggle"),
@@ -181,6 +183,9 @@ function validate() {
         content: "great your email has been sent successfully",
         color: "blue",
       });
+      name.value == "";
+      msg.value == "";
+      email.value == "";
     }
   });
 }
