@@ -183,9 +183,9 @@ function validate() {
         content: "great your email has been sent successfully",
         color: "blue",
       });
-      name.value == "";
-      msg.value == "";
-      email.value == "";
+      name.value = "";
+      msg.value = "";
+      email.value = "";
     }
   });
 }
