@@ -1,5 +1,3 @@
-const { NEWDECIMAL } = require("mysql/lib/protocol/constants/types");
-
 /*=============== SHOW MENU ===============*/
 const navMenu = document.getElementById("nav-menu"),
   navToggle = document.getElementById("nav-toggle"),
